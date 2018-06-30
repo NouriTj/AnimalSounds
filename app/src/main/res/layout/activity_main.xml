@@ -1,0 +1,42 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:scaleType = "centerCrop"
+    tools:context="net.tncode.animalsounds.MainActivity">
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+           <Button android:text="Button"
+               android:id="@+id/button1"
+               android:layout_marginBottom="60dp"
+               android:layout_width="wrap_content"
+               android:layout_gravity="center"
+               android:background="@drawable/btn_blue"
+               style="@style/ButtonText"/>
+
+            <Button android:text="Button"
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_green"
+                style="@style/ButtonText"/>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>
